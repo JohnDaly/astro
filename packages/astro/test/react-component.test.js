@@ -47,6 +47,9 @@ describe('React Components', () => {
 			// test 9: Check island deduplication
 			const uniqueRootUIDs = new Set($('astro-island').map((i, el) => $(el).attr('uid')));
 			expect(uniqueRootUIDs.size).to.equal(4);
+
+			// test 10: Can import components that use named exports
+			expect($('.named-export-component')).to.have.lengthOf(2);
 		});
 
 		it('Can load Vue', async () => {

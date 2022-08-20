@@ -418,6 +418,7 @@ importers:
       '@types/yargs-parser': ^21.0.0
       ast-types: ^0.14.2
       astro-scripts: workspace:*
+      babel-plugin-tester: ^10.1.0
       boxen: ^6.2.1
       chai: ^4.3.6
       cheerio: ^1.0.0-rc.11
@@ -543,6 +544,7 @@ importers:
       '@types/unist': 2.0.6
       '@types/yargs-parser': 21.0.0
       astro-scripts: link:../../scripts
+      babel-plugin-tester: 10.1.0_@babel+core@7.18.10
       chai: 4.3.6
       cheerio: 1.0.0-rc.12
       mocha: 9.2.2
@@ -8475,6 +8477,13 @@ packages:
       '@vue/reactivity': 3.2.37
     dev: true
 
+  /@types/babel-plugin-tester/9.0.5:
+    resolution: {integrity: sha512-NRBPlhi5VkrTXMqDB1hSUnHs7vqLGRopeukC9u1zilOIFe9O1siwqeKZRiuJiVYakgpeDso/HE2Q5DU1aDqBog==}
+    dependencies:
+      '@types/babel__core': 7.1.19
+      '@types/prettier': 2.7.0
+    dev: true
+
   /@types/babel__core/7.1.19:
     resolution: {integrity: sha512-WEOTgRsbYkvA/KCsDwVEGkd7WAr1e3g31VHQ8zy5gul/V1qKullU/BU5I68X5v7V3GnB9eotmom4v5a5gjxorw==}
     dependencies:
@@ -9550,6 +9559,22 @@ packages:
       '@babel/helper-define-polyfill-provider': 0.3.2_@babel+core@7.18.10
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /babel-plugin-tester/10.1.0_@babel+core@7.18.10:
+    resolution: {integrity: sha512-4P2tNaM/Mtg6ytA9YAqmgONnMYqWvdbGDuwRTpIIC9yFZGQrEHoyvDPCx+X1QALAufVb5DKieOPGj5dffiEiNg==}
+    engines: {node: '>=10.13', npm: '>=6'}
+    peerDependencies:
+      '@babel/core': ^7.11.6
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+    dependencies:
+      '@babel/core': 7.18.10
+      '@types/babel-plugin-tester': 9.0.5
+      lodash.mergewith: 4.6.2
+      prettier: 2.7.1
+      strip-indent: 3.0.0
     dev: true
 
   /babel-preset-solid/1.4.8:
@@ -12593,6 +12618,10 @@ packages:
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+    dev: true
+
+  /lodash.mergewith/4.6.2:
+    resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
     dev: true
 
   /lodash.sortby/4.7.0:
